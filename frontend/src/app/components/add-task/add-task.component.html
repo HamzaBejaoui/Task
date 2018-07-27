@@ -1,0 +1,14 @@
+<form (submit)="onAddTask()" class="form-horizontal">
+    <h2>Add new task</h2>
+  <div class="form-group">
+    <label for="email">Name:</label>
+    <input type="email" class="form-control" [(ngModel)]="name" name="name">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Completed:</label>
+    <input type="checkbox" [(ngModel)]="done" name="done">
+  </div>
+  <div class="checkbox">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
